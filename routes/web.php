@@ -5,6 +5,7 @@ use App\Http\Livewire\Detalles;
 use App\Http\Livewire\Facturas;
 use App\Http\Livewire\Login;
 use App\Http\Livewire\MostrarCliente;
+use App\Http\Livewire\MostrarDetalle;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,4 +30,5 @@ Route::get('/clientes', Clientes::class);
 Route::get('/clientes/{id}', MostrarCliente::class);
 Route::get('/login', Login::class);
 Route::get('/detalles', Detalles::class);
+Route::get('/detalles/{id}', MostrarDetalle::class);
 Route::get('/facturas', Facturas::class);
