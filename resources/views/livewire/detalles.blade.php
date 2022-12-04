@@ -22,8 +22,8 @@
                             <td>{{ $detalle['descripcion'] }}</td>
                             <td>{{ '$'.$detalle['Precio']}}</td>
                             <td style="list-style: none; display: flex">
-                                <a class="btn btn-info btn-sm" style="margin: auto" href="clientes/{{$detalle['idDetalle']}}"><i class="material-icons">face</i></a>
-                                <a class="btn btn-success btn-sm" style="margin: auto"  href="clientes/{{$detalle['idDetalle']}}"><i class="material-icons">settings</i></a>
+                                <a class="btn btn-info btn-sm" style="margin: auto" href="detalles/{{$detalle['idDetalle']}}"><i class="material-icons">face</i></a>
+                                <a class="btn btn-success btn-sm" style="margin: auto"  href="detalles/{{$detalle['idDetalle']}}"><i class="material-icons">settings</i></a>
                                 <button style="margin: auto" wire:click='eliminarDetalle({{$detalle['idDetalle']}})' class="btn btn-danger btn-sm"><i class="material-icons">delete</i></button>
 
                             </td>
