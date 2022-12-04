@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Animate.css -->
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="{{ asset('css/icomoon.css') }}">
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <!-- Bootstrap  -->
 
     <!-- Flexslider  -->
@@ -27,12 +27,11 @@
     @livewireStyles
 </head>
 
-<body>
-    <div id="fh5co-page">
-        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-        <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+<body class="bg-secondary">
+    <div>
+        <aside id="fh5co-aside" role="complementary" class="js-fullheight bg-warning">
 
-            <h1 id="fh5co-logo"><a href="index.html">CRUD</a></h1>
+            <h1 id="fh5co-logo"><a href="/clientes">CRUD</a></h1>
             <nav id="fh5co-main-menu" role="navigation">
                 <ul>
                     <li><a href="/login">Login</a></li>
@@ -50,7 +49,7 @@
         </aside>
 
         <div id="fh5co-main">
-            <aside id="fh5co-hero" class="container">
+            <aside class="container">
                 {{$slot}}
             </aside>
             <!--
